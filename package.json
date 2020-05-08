@@ -3,23 +3,42 @@
     "displayName": "Dharma Syntax",
     "description": "Visual Studio Code extension providing syntax highlighting for Dharma files.",
     "version": "0.0.1",
+    "publisher": "Qavar",
     "engines": {
         "vscode": "^1.45.0"
     },
     "categories": [
         "Programming Languages"
     ],
+    "keywords": [
+        "dharma",
+        "dg"
+    ],
     "contributes": {
-        "languages": [{
-            "id": "dharma",
-            "aliases": ["Dharma", "dharma"],
-            "extensions": [".dg"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "dharma",
-            "scopeName": "source.dharma",
-            "path": "./syntaxes/dharma.tmLanguage.json"
-        }]
-    }
+        "languages": [
+            {
+                "id": "dharma",
+                "aliases": [
+                    "Dharma",
+                    "dharma"
+                ],
+                "extensions": [
+                    ".dg"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dharma",
+                "scopeName": "source.dharma",
+                "path": "./syntaxes/dharma.tmLanguage.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/qavar/vscode-dharma-syntax.git"
+    },
+    "homepage": "https://github.com/qavar/vscode-dharma-syntax"
 }
