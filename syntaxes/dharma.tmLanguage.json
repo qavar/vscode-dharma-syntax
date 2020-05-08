@@ -1,0 +1,75 @@
+{
+	"name": "Dharma",
+	"scopeName": "source.dg",
+	"fileTypes": [
+		"dg"
+	],
+	"version": "1.0.0",
+	"patterns": [
+		{
+			"include": "#assignment"
+		},
+		{
+			"include": "#assignment_line"
+		},
+		{
+			"include": "#section_line"
+		},
+		{
+			"include": "#line_comment"
+		},
+		{
+			"include": "#value"
+		},
+		{
+			"include": "#variable_use"
+		},
+		{
+			"include": "#variable_assignment"
+		},
+		{
+			"include": "#method_call"
+		}
+	],
+	"repository": {
+		"assignment": {
+			"match": ":=",
+			"name": "keyword.operator.assignment.dharma"
+		},
+		"assignment_line": {
+			"begin": "^\\w+\\s+:=",
+			"end": "(?<=\\n)",
+			"name": "keyword.operator.assignment.dharma"
+		},
+		"section_line": {
+			"begin": "^\\%section\\%",
+			"end": "(?<=\\n)",
+			"name": "storage.type.dharma"
+		},
+		"line_comment": {
+			"begin": "\\s*+\\%\\%\\%",
+			"end": "(?<=\\n)",
+			"name": "comment.line.double-slash.dharma"
+		},
+		"value": {
+			"begin": "\\s*+\\+",
+			"end": "\\+",
+			"name": "constant.language.boolean.true.dharma"
+		},
+		"variable_use": {
+			"begin": "\\s*+!",
+			"end": "!",
+			"name": "variable.language.arguments.dharma"
+		},
+		"variable_assignment": {
+			"begin": "\\s*+@",
+			"end": "@",
+			"name": "variable.language.arguments.dharma"
+		},
+		"method_call": {
+			"begin": "\\s*+\\%",
+			"end": "\\%",
+			"name": "entity.name.function.dharma"
+		}
+	}
+}
