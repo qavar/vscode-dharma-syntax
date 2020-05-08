@@ -2,7 +2,7 @@
     "name": "dharma-syntax",
     "displayName": "Dharma Syntax",
     "description": "Visual Studio Code extension providing syntax highlighting for Dharma files.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "Qavar",
     "engines": {
         "vscode": "^1.8.0"
