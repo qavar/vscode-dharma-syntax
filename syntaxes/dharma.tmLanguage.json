@@ -4,7 +4,6 @@
 	"fileTypes": [
 		"dg"
 	],
-	"version": "1.0.0",
 	"patterns": [
 		{
 			"include": "#assignment"
