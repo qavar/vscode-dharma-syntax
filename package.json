@@ -31,7 +31,7 @@
         "grammars": [
             {
                 "language": "dharma",
-                "scopeName": "source.dharma",
+                "scopeName": "source.dg",
                 "path": "./syntaxes/dharma.tmLanguage.json"
             }
         ]
